@@ -546,6 +546,11 @@ hr {
 }
 
 
+.ueberschrift {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 
 /* Custom Search */
 #custom-search-input{
@@ -583,7 +588,7 @@ hr {
 
 
 
-/* Orverall Stas */
+/* Orverall Stats */
 
 
 .ui-item{
@@ -610,4 +615,46 @@ hr {
 	color:#888;
 	text-transform:uppercase;
 	font-size:14px;
+}
+
+
+
+
+/*Stats per Champion*/
+
+.col-xs-5er,
+.col-sm-5er,
+.col-md-5er,
+.col-lg-5er {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+.col-xs-5er {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+.col-sm-5er {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5er {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5er {
+        width: 20%;
+        float: left;
+    }
 }
