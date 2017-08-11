@@ -541,7 +541,13 @@ hr {
 	height:768px;
 }
 
+.navbar {
+	margin-bottom: 5px;
+}
 
+
+
+/* Custom Search */
 #custom-search-input{
     padding: 0px;
     border: solid 1px #E4E4E4;
@@ -574,3 +580,34 @@ hr {
     font-size: 23px;
 }
 
+
+
+
+/* Orverall Stas */
+
+
+.ui-item{
+	padding:15px 0px;
+	text-align:center;
+	background:#fff;
+	box-shadow: inset 0px 0px 40px rgba(0,0,0,0.15), 0px 0px 40px rgba(0,0,0,0.15);
+	border:2px solid #fff;
+	margin:10px auto;
+	max-width:400px;
+	border-radius:2px;
+}
+/* Image */
+.ui-item img{
+	max-width:60px;
+	margin:0px auto;
+}
+.ui-item h2{
+	font-size:25px;
+	line-height:45px;
+	font-weight:400;
+}
+.ui-item h6{
+	color:#888;
+	text-transform:uppercase;
+	font-size:14px;
+}
