@@ -11,7 +11,7 @@ var champions = ["Aatrox.png", "Ahri.png", "Akali.png", "Alistar.png", "Amumu.pn
 				 "Graves.png", "Hecarim.png", "Heimerdinger.png", "Illaoi.png", "Irelia.png", 
 				 "Ivern.png", "Janna.png", "JarvanIV.png", "Jax.png", 
 				 "Jayce.png", "Jhin.png", "Jinx.png", "Kalista.png", "Karma.png", 
-				 "Karthus.png", "Kassadin.png", "Katarina.png", "Kayle.png", "Kennen.png",
+				 "Karthus.png", "Kassadin.png", "Katarina.png", "Kayle.png", "Kayn.png", "Kennen.png",
 				 "Khazix.png", "Kindred.png", "Kled.png", "KogMaw.png", "Leblanc.png", 
 				 "LeeSin.png", "Leona.png", "Lissandra.png", "Lucian.png", "Lulu.png",
 				 "Lux.png", "Malphite.png", "Malzahar.png", "Maokai.png", "MasterYi.png", 
