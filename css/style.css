@@ -682,3 +682,10 @@ hr {
 .row {
 	margin: 0px;
 }
+
+
+
+.filter_out {
+	display: none;
+}
+
