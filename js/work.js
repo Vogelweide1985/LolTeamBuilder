@@ -16,10 +16,11 @@ $(document).ready(function() {
 		image.attr('class', 'img-responsive square');
 		image.attr('alt', stats[i].square_png );
 		image.attr('src', 'img/riot/square/' + stats[i].square_png);
-		image.data('champ_id', i);
 		image.attr('id', "s" + i)
-		image.on('click', clickSquare);
+		image.attr('data-champ_id', i);
 		$('.square_png').last().append(image);
+		image.on('click', clickSquare);
+
 
 	}
 
@@ -36,10 +37,19 @@ function clickSquare() {
 	image.attr('class', 'img-responsive');
 	image.attr('alt', stats[champ_id].image_png );
 	image.attr('src', 'img/riot/full/' + stats[champ_id].image_png);
-	image.data('champ_id', champ_id);
-	image.on('click', clickImage);
+	image.attr('data-champ_id', champ_id);
+	
+	image.attr('data-value_1', stats[champ_id].rng1);
+	image.attr('data-value_2', stats[champ_id].rng2);
+	image.attr('data-value_3', stats[champ_id].rng3);
+	image.attr('data-value_4', stats[champ_id].rng4);
+	image.attr('data-value_5', stats[champ_id].rng5);
+	image.attr('data-value_6', stats[champ_id].rng6);
+
+
 	$("<div class='col-md-5er champs_full'>").appendTo(".selected-champs");
 	$('.champs_full').last().append(image);
+	image.on('click', clickImage);
 	n_champs++; 
 	}
 
