@@ -11,7 +11,7 @@ $(document).ready(function() {
 		} 
 		*/
 		/* Show Square Images */
-		$("<div class='col-xs-3 col-md-2 square_png'>").appendTo("#lol_icons");
+		$("<div class='col-xs-2 col-md-2 square_png'>").appendTo("#lol_icons");
 		var image = $('<img/>');
 		image.attr('class', 'img-responsive square');
 		image.attr('alt', stats[i].square_png );
@@ -47,7 +47,7 @@ function clickSquare() {
 	image.attr('data-value_6', stats[champ_id].rng6);
 
 
-	$("<div class='col-md-5er champs_full'>").appendTo(".selected-champs");
+	$("<div class='col-md-5er col-xs-5er champs_full'>").appendTo(".selected-champs");
 	$('.champs_full').last().append(image);
 	image.on('click', clickImage);
 	n_champs++; 

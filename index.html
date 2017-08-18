@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>--- TODO ---</title>
+    <title>League of Legends Team Builder</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,42 +25,35 @@
 	<header>
 		<nav class="navbar navbar-default">
 		  <div class="container-fluid">
-		    <div class="navbar-header">
-		      <a class="navbar-brand" href="#">
-		        <img alt="Brand" src="...">
-		      </a>
+		    <div class="navbar-header" >
+		 		<h2 class="navi"> League of Legends Team Builder</h2>
+		 		<p>Powered by former LCS Coach</p>
 		    </div>
 		  </div>
 		</nav>  	
 	</header>
 
-  <!-- Ueberschrift -->
-	<div class="container-fluid ueberschrift">
-		 <div class="row ">
-		 	<div class="col-md-12">
-		 		<p> Your Team composition !!!!!</p>
-		 	</div>
-		 </div>
-	</div>
 
   <!-- Advertising -->
-	<div class="container-fluid">
-		 <div class="row ">
-		 	<div class="col-md-12">
-		 		<p> Hier Werbebanner !!!!!</p>
+	<div class="container">
+		 <div class="row">
+		 	<div class="col-md-12" id="adv1">
+		 		<p style="text-align: center"> Hier Werbebanner !!!!!</p>
 		 	</div>
 		 </div>
 	</div>
 
 
-	 <div class="container-fluid ">
+	 <div class="container ">
 		 <div class="row">
-		    <div class="col-md-2 ui" style="background-color:green;">
+		    <div class="col-md-2 ui2">
 		       <div class="row">
-				   <p>Choose your Champions</p>
+		       	<div class="col-md-12">
+		       		<p>Choose your Champions</p>
+		       	</div>   
 			  </div>
 		      <div class="row" >
-		        <div class="col-md-12" style="background-color:red;">
+		        <div class="col-md-12" id="search_field">
 
 		        	<!-- Search Field -->
 					<div id="custom-search-input">
@@ -78,17 +71,17 @@
 		      </div>
 
 		      <!-- Icon Tabelle-->	
-		      <div class = "row " id="lol_icons"> 
+		      <div class = "row round_borders" id="lol_icons"> 
 		      </div>
 		      <!-- Icon Tabelle Ende-->	
 		    </div>
 
 
-		    <div class="col-md-10 ui2" style="background-color:orange">
+		    <div class="col-md-10">
 
 		    	<!-- Overall Stats -->
 				<div class="row">
-					<div class="col-md-2 col-sm-6 col-xs-6">
+					<div class="col-md-2 col-sm-6 col-xs-12">
 						<!-- UI-item -->
 						<div class="ui-item">
 							<!-- Image -->
@@ -98,35 +91,35 @@
 							<h6> Overall</h6>
 						</div>
 					</div>
-					<div class="col-md-2 col-sm-6 col-xs-6">
+					<div class="col-md-2 col-sm-6 col-xs-12">
 						<div class="ui-item">
 							<img src="img/crown.png" alt="" class="img-responsive"/>
 							<h2 class="lblue results" id="erg1">15%</h2>
 							<h6>Crowd control</h6>
 						</div>
 					</div>
-					<div class="col-md-2 col-sm-6 col-xs-6">
+					<div class="col-md-2 col-sm-6 col-xs-12">
 						<div class="ui-item">
 							<img src="img/heart.png" alt="" class="img-responsive"/>
 							<h2 class="lblue results" id= "erg2">20%</h2>
 							<h6>Engange</h6>
 						</div>
 					</div>
-					<div class="col-md-2 col-sm-6 col-xs-6">
+					<div class="col-md-2 col-sm-6 col-xs-12">
 						<div class="ui-item">
 							<img src="img/home.png" alt="" class="img-responsive"/>
 							<h2 class="lblue results" id="erg3">25%</h2>
-							<h6>AD/AP mix</h6>
+							<h6>AD/AP Balance</h6>
 						</div>
 					</div>
-					<div class="col-md-2 col-sm-6 col-xs-6">
+					<div class="col-md-2 col-sm-6 col-xs-12">
 						<div class="ui-item">
 							<img src="img/location.png" alt="" class="img-responsive"/>
 							<h2 class="lblue results" id="erg4">45%</h2>
 							<h6>DPS</h6>
 						</div>
 					</div>
-					<div class="col-md-2 col-sm-6 col-xs-6">
+					<div class="col-md-2 col-sm-6 col-xs-12">
 						<div class="ui-item">
 							<img src="img/support.png" alt="" class="img-responsive"/>
 							<h2 class="lblue results" id="erg5">74%</h2>
@@ -144,26 +137,19 @@
 		  </div>
 	 </div>
 
-	<div class="container-fluid">
+	<div class="container">
 		 <div class="row ">
-		 	<div class="col-md-12">
-		 		<p> Hier Werbebanner Nr.2!!!!!</p>
+		 	<div class="col-md-12" id="adv2">
+		 		<p style="text-align: center"> Hier Werbebanner Nr.2!!!!!</p>
 		 	</div>
 		 </div>
 	</div>
 
 
 	<!-- Footer-->
-	<footer class="navbar-bottom">
-		  <div class="container-fluid">
-		  	<div class="row lol_disclaimer">
-			  	<div class="col-md-12">
-			  		<p> LolNexus isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
-					</p>
-			  	</div>
-		  		
-		  	</div>
-		  	<div class="row">
+	<footer class="footer">
+		  <div class="container">
+		  	<div class="row round_borders ">
 		  		<div class="col-xs-4 col-md-4">
 		  			<p><a href="https://www.w3schools.com">Kontakt</a></p>
 		  		</div>
@@ -175,6 +161,12 @@
 		  		</div>
 		  	</div>
 		  </div>
+		  	<div class="row ">
+			  	<div class="col-md-12 lol_disclaimer">
+			  		<p> League of Legends team builder isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
+					</p>
+			  	</div>
+		  	</div>
 	</footer>
 
 

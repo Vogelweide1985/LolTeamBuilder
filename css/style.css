@@ -23,19 +23,12 @@ footer {
 }
 
 
-footer {
-    line-height: 60px;
-    background-color: #f5f5f5;
-}
-
-
-
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6, {
 	color: #666;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
@@ -68,10 +61,12 @@ h6 {
 	line-height: 28px;
 }
 p {
-	margin: 2px 0px;
+	color: #666;
+	font-family: 'Open Sans', sans-serif;
 	padding: 0px;
 	line-height:28px;
-	margin-bottom:5px;
+	margin-bottom:0px;
+	text-align: center;
 }
 a{
 	text-decoration: none;
@@ -88,12 +83,7 @@ hr {
 	border-top: 0px;
 	border-bottom: 1px solid #eee;
 }
-:focus {
-	outline:none;
-}
-::-moz-focus-inner {
-	border:0;
-}
+
 /* Text color classes */
 .white {
   color: #ffffff !important;
@@ -530,22 +520,11 @@ hr {
 .youtube:hover {	background: #b72411;}
 
 
-* {
+/** {
 	border: 1px solid #000000;
 }
+*/
 
-
-
-.ui {
-	height: 640px;
-	padding:0px;
-	overflow-y: scroll;
-}
-
-.ui2 {
-	height: 640px;
-	padding:0px;
-}
 
 .navbar {
 	margin-bottom: 5px;
@@ -564,6 +543,8 @@ hr {
     border: solid 1px #E4E4E4;
     border-radius: 6px;
     background-color: #fff;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 #custom-search-input input{
@@ -620,7 +601,8 @@ hr {
 .ui-item h6{
 	color:#888;
 	text-transform:uppercase;
-	font-size:14px;
+	font-size:12px;
+	font-weight: 600;
 }
 
 
@@ -634,8 +616,8 @@ hr {
 .col-lg-5er {
     position: relative;
     min-height: 1px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 
@@ -669,8 +651,9 @@ hr {
 /* LOL Disclaimer */
 
 .lol_disclaimer {
-	background-color: black;
+	background-color: #f5f5f5;
 	color: white;
+	margin-top: 15px;
 }
 
 .square_png {
@@ -689,3 +672,55 @@ hr {
 	display: none;
 }
 
+
+
+
+.ui2 {
+	padding:0px;
+	/* overflow-y: scroll; */
+}
+
+
+
+.navi {
+	margin: 0 auto;
+    width: 100%;
+	text-align: right;
+}
+
+.round_borders {
+	border: 1px solid #dddddd;
+	border-radius: 6px;
+}
+
+#search_field {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#lol_icons {
+	padding: 5px;
+}
+
+
+#adv1 {
+	border-bottom: 1px solid #dddddd;
+	margin: 5px;
+}
+
+#adv2 {
+	border-top: 1px solid #dddddd;
+	margin: 10px;
+}
+
+
+
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.selected-champs {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
