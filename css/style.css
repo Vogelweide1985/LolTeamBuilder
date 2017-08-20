@@ -66,7 +66,6 @@ p {
 	padding: 0px;
 	line-height:28px;
 	margin-bottom:0px;
-	text-align: center;
 }
 a{
 	text-decoration: none;
@@ -586,7 +585,7 @@ hr {
 	border:2px solid #fff;
 	margin:10px auto;
 	max-width:400px;
-	border-radius:2px;
+	border-radius:10px;
 }
 /* Image */
 .ui-item img{
@@ -606,7 +605,9 @@ hr {
 }
 
 
-
+#ui_overall {
+	border-color:#FFD700;
+}
 
 /*Stats per Champion*/
 
@@ -723,4 +724,15 @@ hr {
 .selected-champs {
 	margin-top: 15px;
 	margin-bottom: 15px;
+}
+
+.chosen_champions {
+	border-radius: 10px;
+}
+
+#impressum {
+	border: 1px solid #dddddd;
+	border-radius: 6px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
