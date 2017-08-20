@@ -1,8 +1,4 @@
 
-
-
-
-
 $(document).ready(function() {
 	for (var i = 0, j = stats.length; i < j; i++){
 			/*
@@ -25,6 +21,22 @@ $(document).ready(function() {
 	}
 
 });
+
+
+$(document).ready(function() {
+	$('body').on('click', function(event){
+	getStats(1);
+	getStats(2);
+	getStats(3);
+	getStats(4);
+	getStats(5);
+	totalStat();
+	});
+
+	$('input').on('keyup', champFilter);
+
+});
+
 
 
 var n_champs = 0;
@@ -64,16 +76,6 @@ function clickImage() {
 };
 
 
-$(document).ready(function() {
-	$('body').on('click', function(event){
-	getStats(1);
-	getStats(2);
-	getStats(3);
-	getStats(4);
-	getStats(5);
-	totalStat();
-	});
-});
 
 function getStats(param) {
 		var	champ_imgs = $('.chosen_champions');
@@ -97,4 +99,18 @@ function totalStat() {
 			total = Math.round(total / $(champ_stats).length);
 		};
 		$('#overall').html(total + "%");
+}
+
+
+function champFilter() {
+    var value = $("#champFilter").val().toLowerCase();
+
+    $(".square").each(function() {
+        if ($(this).attr("alt").toLowerCase().search(value) > -1) {
+            $(this).parent().show();
+        }
+        else {
+            $(this).parent().hide();
+        }
+    });
 }
