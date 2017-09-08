@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 var n_champs = 0;
 function clickSquare() {
-	if (n_champs < 5) {
+	if (n_champs < 10) {
 	
 	$(this).closest('div').addClass('filter_out') 
 	var champ_id = +$(this).data('champ_id');
@@ -58,9 +58,13 @@ function clickSquare() {
 	image.attr('data-value_5', stats[champ_id].rng5);
 	image.attr('data-value_6', stats[champ_id].rng6);
 
+	for (i = 0; i < 10; i++) {
+	    if($("#champ_" + i).find("img").length == 0) {
+	  		$("#champ_" + i ).append(image);	
+	  		break;
+		}
+	} 
 
-	$("<div class='col-md-5er col-xs-5er champs_full'>").appendTo(".selected-champs");
-	$('.champs_full').last().append(image);
 	image.on('click', clickImage);
 	n_champs++; 
 	}
@@ -72,7 +76,7 @@ function clickImage() {
 	champ_id = $(this).data('champ_id');
 	$('#s' + champ_id).closest('div').removeClass('filter_out');
 	n_champs--;
-	$(this).closest('div').remove();
+	$(this).remove();
 };
 
 
@@ -106,7 +110,8 @@ function champFilter() {
     var value = $("#champFilter").val().toLowerCase();
 
     $(".square").each(function() {
-        if ($(this).attr("alt").toLowerCase().search(value) > -1) {
+        if (($(this).attr("alt").toLowerCase().search(value) > -1) && 
+        	($(this).parent('.filter_out')).length == 0) {
             $(this).parent().show();
         }
         else {

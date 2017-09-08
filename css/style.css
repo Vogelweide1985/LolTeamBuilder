@@ -112,7 +112,7 @@ hr {
   color: #fcd419 !important;
 }
 .purple {
-  color: #cb79e6 !important;
+  color: #033c73 !important;
 }
 .rose {
   color: #ff61e7 !important;
@@ -578,7 +578,7 @@ hr {
 
 
 .ui-item{
-	padding:15px 0px;
+	padding:5px 0px;
 	text-align:center;
 	background:#fff;
 	box-shadow: inset 0px 0px 40px rgba(0,0,0,0.15), 0px 0px 40px rgba(0,0,0,0.15);
@@ -596,6 +596,7 @@ hr {
 	font-size:25px;
 	font-weight:400;
 	margin:0px 0px 0px 0px;
+	line-height: 30px;
 }
 .ui-item h6{
 	color:#888;
@@ -603,12 +604,11 @@ hr {
 	font-size:12px;
 	font-weight: 600;
 	margin:0px 0px 0px 0px;
+	line-height: 14px;
 }
 
 
-#ui_overall {
-	border-color:#FFD700;
-}
+
 
 /*Stats per Champion*/
 
@@ -738,4 +738,17 @@ hr {
 	border-radius: 6px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+
+.team_stats {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.stats-jpg {
+	border-radius: 50px;
+}
+
+#title {
+	color: purple;
 }
