@@ -103,17 +103,22 @@ hr {
   color: #32c8de !important;
 }
 .blue {
-  color: #609cec !important;
+  color: #1464F4 !important;
 }
 .orange {
   color: #f78153 !important;
 }
 .yellow {
-  color: #fcd419 !important;
+  color: #ffd700 !important;
 }
 .purple {
   color: #033c73 !important;
 }
+
+.dpurple {
+  color: #7D26CD !important;
+}
+
 .rose {
   color: #ff61e7 !important;
 }
@@ -589,8 +594,9 @@ hr {
 }
 /* Image */
 .ui-item img{
-	max-width:40px;
-	margin:0px auto;
+	max-width:52px;
+	margin:8px auto;
+
 }
 .ui-item h2{
 	font-size:25px;
@@ -604,9 +610,17 @@ hr {
 	font-size:12px;
 	font-weight: 600;
 	margin:0px 0px 0px 0px;
-	line-height: 14px;
+	line-height: 18px;
 }
 
+.ui-item span{
+	color:#888;
+	text-transform:uppercase;
+	font-size:20px;
+	font-weight: 600;
+	margin:0px 0px 0px 0px;
+	line-height: 18px;
+}
 
 
 
@@ -751,4 +765,9 @@ hr {
 
 #title {
 	color: purple;
+}
+
+
+#vs-text {
+	font-size:12px;
 }
